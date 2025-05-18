@@ -1,0 +1,19 @@
+body {
+    background-color: #1695DA;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.title-box {
+    background-color: white;
+}
+
+header h1,p {
+    font-family: 'kenia', 'cursive';
+}
