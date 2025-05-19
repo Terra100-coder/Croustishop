@@ -1,6 +1,7 @@
 body {
     background-color: #1695DA;
     margin: 0 auto;
+    line-height: 20px;
 }
 
 header {
@@ -12,8 +13,92 @@ header {
 
 div.title-box {
     background-color: white;
+    position: absolute;
+    z-index: 999;
+    padding: 50px;
+}
+
+header h1 {
+    font-size: 80px;
+}
+
+header p {
+    font-size: 25px;
 }
 
 header h1,p {
     font-family: 'kenia', 'cursive';
+}
+
+.slider{
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: calc(500*4);
+    animation: glisse 7s infinite ease;
+    height: 720px;
+}
+
+.slide {
+    opacity: 0.5;
+}
+
+
+@keyframes glisse{
+
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(0);
+    }
+
+    33% {
+        transform: translateX(-500px);
+    }
+
+    66% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+nav.menu ul li {
+    list-style-type: none;
+    display: inline-block;
+    color: white;
+}
+
+nav.menu ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-item {
+    flex: 1;
+    height: 300px;
+}
+
+.pizza {
+    background: url(../CroustiShop/images/pizza-banner.jpg) 100%;
+}
+
+.salade {
+    background: url(../CroustiShop/images/salad-banner.jpg) 100%;
+}
+
+.burger {
+    background: url(../CroustiShop/images/burger-banner.jpg) 100%;
+}
+
+.boisson {
+    background: url(../CroustiShop/images/boisson-banner.jpg) 100%;
 }
