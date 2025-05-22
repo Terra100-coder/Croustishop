@@ -84,8 +84,6 @@ header h1,p {
 }
 
 .section-menu {
-    width: 100%;
-    display: flex;
     justify-content: center;
     transform: translateY(-130px);
 }
@@ -94,10 +92,10 @@ nav.menu {
     width: calc(500px * 4);
 }
 
-nav.menu ul{
+nav.menu ul {
     display: flex;
     flex-direction: row;
-}
+} 
 
 nav.menu ul li {
     list-style-type: none;
@@ -173,7 +171,7 @@ section {
 }
 
 .item-info h3 {
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .item-info hr {
@@ -188,4 +186,32 @@ p.prix {
 
 section img {
     width: 330px;
+}
+
+.sticky {
+    position: fixed;
+    width: 400px;
+    top: 30vh;
+    right: 50px;
+    transform: translateY(10px);
+    transition: 0.6 all;
+}
+
+.sticky + #main {
+    padding-top: 120px;
+}
+
+.sticky nav.menu ul {
+    flex-direction: column;
+}
+
+.sticky, .menu ul li {
+    margin: 2px;
+}
+
+footer p {
+    font-size: 22px;
+    text-align: center;
+    padding: 20px;
+    color: white;
 }
